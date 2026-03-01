@@ -1,0 +1,109 @@
+:root {
+    --primary-color: #E76C1F;
+    --secondary-color: #06171E;
+    --primary-light-color: #FDEADC;
+    --white: #ffff;
+    --gray: #627B84;
+    --dark-gray: #363534;
+}
+
+@font-face {
+    font-family: 'Hollow';
+    src: url(./assets/fonts/Hollow.ttf) format('truetype');
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    font-family: 'Hollow', Helvetica, sans-serif;
+}
+
+p {
+    font-size: 16px;
+    margin: 0;
+}
+
+body {
+    background-color: var(--white);
+    /* font-family: 'Palanquin', Helvetica, sans-serif; */
+    margin: 0;
+}
+
+main {
+    min-height: calc(100vh - 5em);
+}
+
+.bg-primary {
+    background-color: var(--primary-color);
+}
+
+.text-primary {
+    color: var(--primary-color);
+}
+
+.text-gray {
+    color: var(--gray);
+}
+
+.text-bold {
+    font-weight: 700;
+}
+
+
+.container {
+    max-width: 1440px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.container__title {
+    max-width: 1440px;
+    margin: 80px auto 30px auto;
+}
+
+.header {
+    background: #2A7B9B;
+    background: linear-gradient(180deg, rgba(42, 123, 155, 1) 0%, rgba(255, 255, 255, 1) 100%);
+}
+
+.header__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.logo {
+    width: auto;
+}
+
+.display-none {
+    display: none!important;
+}
+
+.shadow {
+    box-shadow: 0 0 15px rgb(160, 160, 160);
+}
+
+/* Search Bar */
+
+.search_bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 150px 0 70px 0 ;
+}
+
+.pokemon_search_input {
+    width: 500px;
+    background: #000000;
+    background: linear-gradient(180deg, rgb(177 177 177) 0%, rgba(255, 255, 255, 1) 100%);
+    padding: 20px;
+    border: 1px solid #c1c1c1;
+    border-radius: 20px;
+}
