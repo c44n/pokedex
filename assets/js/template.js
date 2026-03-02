@@ -10,13 +10,15 @@ function pokemonCardTemplate(pokemon, details, bg_color) {
     }
 
     return `
-        <div class="pokemon_card shadow bg_${bg_color}">
-            <div class="card_header">
+        <div class="pokemon_card shadow">
+            <div class="card_header bg_${bg_color}">
                 <div class="pokemon_title_wrapper">
                 <h2>${pokemon.name}</h2>
                 <h3>#${details.id}</h3>
                 </div>
-                <img src="${details.sprites.other.showdown.front_default}" class="pokemon_image">
+                <div class="pokemon_image_wrapper">
+                    <img src="${details.sprites.other.showdown.front_default}" class="pokemon_image">
+                </div>
             </div>
 
             <div class="card_body">

@@ -4,15 +4,16 @@ const pokemonCardRef = document.getElementById('pokemon_card');
 const pokemonCardWrapperRef = document.getElementById('pokemon_card_wrapper');
 
 
-function init() {
-    loadPokemons(5);
+function init(param) {
+    let url = 'https://pokeapi.co/api/v2/pokemon?limit='+param;
+    loadPokemons(url, param);
 
 }
 
-const url = 'https://pokeapi.co/api/v2/pokemon?limit=10';
 
-async function loadPokemons(param) {
-
+async function loadPokemons(url, param) {
+    console.log(url);
+    
     try {
         let response = await fetch(url);
         // Wenn Fehler auftritt, wird restlicher Code in try nicht ausgeführt
