@@ -6,24 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pokedex</title>
 
-    <link rel="stylesheet" href="style.css">
-
     <link rel="shortcut icon" href="./assets/icons/pokeball.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./assets/styles/pokemon_types.css">
+
+    <script src="./assets/js/template.js" defer></script>
+    <script src="/script.js" defer></script>
+
 </head>
 
-<body>
+<body onload="init(2)">
     <header class="header">
         <div class="container">
             <div class="header__wrapper">
-                <h1 class="logo">PoKeMoN PoKeDeX</h1>
+                <img src="./assets/images/logo.png" alt="">
             </div>
 
             <div class="search_bar">
-                <input type="text" class="pokemon_search_input shadow" id="pokemon_search_input" placeholder="Search Pokemon...">
+                <input type="text" class="pokemon_search_input shadow" id="pokemon_search_input"
+                    placeholder="Search Pokemon...">
             </div>
         </div>
     </header>
 
+    <main>
+        <section class="pokemon_list">
+            <div class="container">
+                <div class="pokemon_card_wrapper" id="pokemon_card_wrapper"></div>
+            </div>
+        </section>
+    </main>
 </body>
 
 </html>
